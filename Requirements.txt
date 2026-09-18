@@ -1,0 +1,18 @@
+# --- core (required) ---
+pillow>=10.0          # render + degrade contract pages
+pytesseract>=0.3.10   # Tesseract OCR wrapper
+numpy>=1.24           # metrics, bootstrap confidence intervals
+matplotlib>=3.7       # figures (plot_results.py)
+
+# --- optional ---
+anthropic>=0.39       # only for --llm anthropic (Claude API)
+# transformers>=4.40  # only for the LayoutLMv3 layout-aware path
+# torch>=2.0          # required by transformers for LayoutLMv3
+
+# --- NOT pip installable (install separately) ---
+# Tesseract OCR engine:
+#   macOS:   brew install tesseract
+#   Ubuntu:  sudo apt-get install tesseract-ocr
+#   Windows: https://github.com/UB-Mannheim/tesseract/wiki
+# Ollama (local LLMs; no Python package needed, uses HTTP):
+#   https://ollama.com  ->  ollama pull llama3.1 mistral qwen2.5
