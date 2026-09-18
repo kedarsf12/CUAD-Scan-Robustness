@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# CUAD data (download separately, CC BY 4.0)
+CUADv1.json
+test.json
+train_separate_questions.json
+
+# Run artifacts
+results/
+
+
+
+
